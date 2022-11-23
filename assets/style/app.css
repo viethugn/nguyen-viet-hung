@@ -37,6 +37,10 @@
     display: flex;
 }
 
+.content-row23 {
+    display: flex;
+}
+
 .top1,
 .bot1 {
     width: 250px;
@@ -197,13 +201,12 @@
 @media screen and (max-width:1439px) {
     .row1 .tieude {
         width: 476px;
-        max-width: 100%;
         margin: auto;
     }
 
     .top1,
     .bot1 {
-        margin: 0 20px 20px 20px;
+        margin: 0 20px 20px 35px;
     }
 
     .row1,
@@ -214,51 +217,51 @@
     }
 
     .row2 .top1 .content1-top-row2 {
-        max-width: 100%;
+        width: 100%;
     }
 
     .row2 .top1 .content2-top-row2 {
-        max-width: 100%;
+        width: 100%;
     }
 
     .row3 .bot1 .content1-bot-row3 {
-        max-width: 100%;
+        width: 100%;
     }
 
     .row3 .bot1 .content2-bot-row3 {
-        max-width: 100%;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 1084px) {
-    .row1 .tieude {
-        width: 700px;
-        height: 106px;
-        margin: 29px 102px 51.9px 101px;
+@media screen and (max-width: 1086px) {
 
+    .row1 .tieude {
+        width: 100%;
+        height: 106px;
+        margin: 0px 0px 51.9px 0px;
     }
 
     .Main-container {
+        display: inline-block;
+        padding: auto;
+    }
+
+    .content-row23 {
+        justify-content: space-between;
+    }
+    .row1, .row2, .row3 {
+        width: 100%;
         display: block;
-        width: fit-content;
-        margin: 0 auto;
     }
-    .top1, .bot1{
-        width: 60%;
-        margin-right: 0;
+    .top1,
+    .bot1 {
+        width: 100%;
+        margin: 0px;
     }
-    .row2,
-    .row3 {
-        width: 48%;
-        padding: 13px 13px;
-        display: table-cell;
-    }
-    .row2 .top1{
-        margin-left: 90px;
-    }
+
     /*---------------- tieu đề */
     .tieude-center1 {
-       width: auto;
+        width: auto;
     }
 
     .tieude-center2 {
@@ -275,94 +278,75 @@
     }
 
     .row2 .top1 .content1-top-row2 {
-        max-width: 100%;
+        width: 100%;
+        height: 266px;
     }
-    
 
     .row2 .top1 .content2-top-row2 {
-        max-width: 100%;
+        width: 100%;
+    }
+
+    /* ---padding row 2  */
+    .row2 .top1{
+        padding-right: 22px;
     }
 
     .row3 .bot1 .content1-bot-row3 {
-        max-width: 100%;
+        width: 100%;
     }
 
-    .row3 .bot1 .content2-bot-row3 { 
-        max-width: 100%;
+    .row3 .bot1 .content2-bot-row3 {
+        width: 100%;
     }
 
+    /* ---padding row 3  */
+    .row3 .bot1{
+        padding-left: 22px;
+    }
 }
 
 @media screen and (max-width:767px) {
     .row1 .tieude {
         width: 615px;
         height: 168.5px;
-        /* margin: 29px 93px 64.1px 126px; */
+        margin: 0 0 64.1px 0;
     }
 
-    .row2,
-    .row3 {
-        float: none;
+    .top1,
+    .bot1 {
+        width: auto;
+        margin: 0;
+    }
+
+    .content-row23 {
+        display: block;
     }
 
     .row2 .top1 .content1-top-row2 {
-        width: 516px;
-        height: 154px;
-        /* margin: 7px 126px 47.5px; */
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.33;
-        letter-spacing: -0.14px;
-        text-align: left;
-        color: var(--brownish-grey);
+        width: 100%;
+        height: auto;
+        margin-bottom: 47.5px;
     }
 
     .row2 .top1 .content2-top-row2 {
-        width: 514px;
-        height: 130px;
-        /* margin: 7px 126px 30.5px 128px; */
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.33;
-        letter-spacing: -0.14px;
-        text-align: left;
-        color: var(--brownish-grey);
+        width: 100%;
+        height: auto;
+        margin-bottom: 47.5px;
     }
 
     .row3 .bot1 .content1-bot-row3 {
-        width: 514px;
-        height: 122px;
-        /* margin: 72.5px 125.5px 30.5px 128.5px; */
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.33;
-        letter-spacing: -0.14px;
-        text-align: left;
-        color: var(--brownish-grey);
+        width: 100%;
+        height: auto;
+        margin-bottom: 47.5px;
     }
 
     .row3 .bot1 .content2-bot-row3 {
-        width: 514px;
-        height: 128px;
-        /* margin: 7px 125px 142.5px 129px; */
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.33;
-        letter-spacing: -0.14px;
-        text-align: left;
-        color: var(--brownish-grey);
+        width: 100%;
+        height: auto;
+        margin-bottom: 47.5px;
     }
 
+    .row3 .bot1 {
+        padding-left: 0;
+    }
 }
