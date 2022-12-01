@@ -85,10 +85,7 @@ p {
 
 /*---------------- tieu đề */
 
-.tieude-center1,
-.tieude-center2,
-.tieude-right1,
-.tieude-right2 {
+h4 {
     width: auto;
     height: auto;
     margin: 0 0 7px;
